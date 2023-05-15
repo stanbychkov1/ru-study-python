@@ -15,7 +15,7 @@ class FilterMapExercise:
         :param input_array: Исходный список.
         :return: Отфильтрованный список.
         """
-        res_list = [func(x)[1] for x in input_array if func(x)[0]]
+        res_list = [res[1] for x in input_array if (res := func(x))[0]]
         return res_list
 
 
